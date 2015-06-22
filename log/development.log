@@ -19167,3 +19167,2353 @@ Processing by PinsController#index as HTML
   Rendered pins/index.html.haml within layouts/application (8.8ms)
   [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
 Completed 200 OK in 116ms (Views: 115.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 09:18:43 -0500
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (3.2ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (58.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 329ms (Views: 311.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.self-eb42dc03f2d50e30f81e70d33ee612c43b7fa7c889043d10705848e9395cdf36.css?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/pins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/pins.self-68755679ee21f68a2a14ab30434947b80d70dc96df4abd5dd2e3dbb89a7909e0.js?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-06-19 09:18:44 -0500
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-06-19 09:18:47 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"54CzXrclkV8UKEf8Mafzmg/2DR4wH5S6WllsvCRBe9MJve+0iWrG5BXpRcyU8NWuQaLp4FJ4VlJP0p4/XhUycw=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 09:18:47 -0500
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.3ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 130ms (Views: 128.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 09:18:51 -0500
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (18.0ms)
+Completed 200 OK in 134ms (Views: 132.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/application.self-eb42dc03f2d50e30f81e70d33ee612c43b7fa7c889043d10705848e9395cdf36.css?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/pins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/pins.self-68755679ee21f68a2a14ab30434947b80d70dc96df4abd5dd2e3dbb89a7909e0.js?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-06-19 09:18:51 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2015-06-19 09:18:55 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/brandonespinoza/Desktop/code/RUBY/VizualizeIt/app/views/devise/sessions/new.html.erb:25: syntax error, unexpected keyword_class, expecting ')'
+...button :submit, "Sign up" class: "btn btn-primary" );@output...
+...                               ^):
+  app/views/devise/sessions/new.html.erb:25: syntax error, unexpected keyword_class, expecting ')'
+
+
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.3ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.8ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-06-19 09:18:56 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/brandonespinoza/Desktop/code/RUBY/VizualizeIt/app/views/devise/sessions/new.html.erb:25: syntax error, unexpected keyword_class, expecting ')'
+...button :submit, "Sign up" class: "btn btn-primary" );@output...
+...                               ^):
+  app/views/devise/sessions/new.html.erb:25: syntax error, unexpected keyword_class, expecting ')'
+
+
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.9ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-06-19 09:19:51 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 121ms (Views: 120.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/pins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/application.self-eb42dc03f2d50e30f81e70d33ee612c43b7fa7c889043d10705848e9395cdf36.css?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/pins.self-68755679ee21f68a2a14ab30434947b80d70dc96df4abd5dd2e3dbb89a7909e0.js?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-06-19 09:19:51 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2015-06-19 09:21:19 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 144ms (Views: 140.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-06-19 09:21:27 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ShyE3LGOVqQr3hZUGLDyccOimJMNOq3jgGrxBFCofWYnID+tsd4Y+wq49W/zXXaY94wpELLqGv5OyOPxGeiboQ==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign up"}
+  [1m[35mUser Load (3.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "espinozab100@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-06-19 00:30:18.310657"], ["current_sign_in_at", "2015-06-19 14:21:27.950291"], ["sign_in_count", 6], ["updated_at", "2015-06-19 14:21:27.951930"], ["id", 1]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 111ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 09:21:27 -0500
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (8.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 112ms (Views: 111.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 09:35:04 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (36.8ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 478ms (Views: 462.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2015-06-19 09:35:04 -0500
+
+
+Started GET "/assets/pins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-19 09:35:04 -0500
+
+
+Started GET "/assets/application.self-eb42dc03f2d50e30f81e70d33ee612c43b7fa7c889043d10705848e9395cdf36.css?body=1" for ::1 at 2015-06-19 09:35:04 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-19 09:35:04 -0500
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2015-06-19 09:35:04 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-06-19 09:35:04 -0500
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-06-19 09:35:04 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-06-19 09:35:04 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-06-19 09:35:04 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-06-19 09:35:04 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-06-19 09:35:04 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-06-19 09:35:04 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-06-19 09:35:04 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-06-19 09:35:04 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-06-19 09:35:04 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-06-19 09:35:04 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-06-19 09:35:05 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-06-19 09:35:05 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-19 09:35:05 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-19 09:35:05 -0500
+
+
+Started GET "/assets/pins.self-68755679ee21f68a2a14ab30434947b80d70dc96df4abd5dd2e3dbb89a7909e0.js?body=1" for ::1 at 2015-06-19 09:35:05 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-06-19 09:35:05 -0500
+
+
+Started GET "/pins/4" for ::1 at 2015-06-19 09:49:41 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 4], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (15.2ms)
+Completed 200 OK in 122ms (Views: 119.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-06-19 09:49:41 -0500
+
+
+Started PUT "/pins/4/like" for ::1 at 2015-06-19 09:49:45 -0500
+Processing by PinsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"zppc6NlKku+BEls705E90R3IjDoPKMx7ZjMr3rovhUoiIS64T2zdLMLpyPeTtcOfj7zdGi9+vWXrzisWfmKq8g==", "id"=>"4"}
+  [1m[36mPin Load (0.3ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."voter_id" = ? AND "votes"."voter_type" = ? AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 4], ["votable_type", "Pin"], ["voter_id", 1], ["voter_type", "User"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "votes" ("votable_id", "votable_type", "voter_id", "voter_type", "vote_flag", "vote_weight", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["votable_id", 4], ["votable_type", "Pin"], ["voter_id", 1], ["voter_type", "User"], ["vote_flag", "t"], ["vote_weight", 1], ["created_at", "2015-06-19 14:49:45.286161"], ["updated_at", "2015-06-19 14:49:45.286161"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/pins/4
+Completed 302 Found in 27ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/pins/4" for ::1 at 2015-06-19 09:49:45 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 4], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 105ms (Views: 103.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 09:49:49 -0500
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (12.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 146ms (Views: 143.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pins/8" for ::1 at 2015-06-19 09:56:39 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 8], ["votable_type", "Pin"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (8.0ms)
+Completed 200 OK in 118ms (Views: 115.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pins/8" for ::1 at 2015-06-19 09:56:39 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 8], ["votable_type", "Pin"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 131ms (Views: 129.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 09:56:44 -0500
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (1.1ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (21.3ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 323ms (Views: 320.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 09:56:44 -0500
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (19.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (87.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 299ms (Views: 278.0ms | ActiveRecord: 20.6ms)
+
+
+Started GET "/pins/6" for ::1 at 2015-06-19 09:56:47 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 6], ["votable_type", "Pin"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 122ms (Views: 119.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 09:56:51 -0500
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.3ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (14.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 123ms (Views: 121.0ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-06-19 09:58:24 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ezyuOOphoh0RSlpCUzOC0d7cARjhyJQL0tngLvg3vZaXh9xofEft3lKxyY4TF3yfTKhQOMGe5RVfJODmPHqSLg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 31ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 09:58:24 -0500
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 123ms (Views: 121.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-06-19 09:58:27 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (60.2ms)
+Completed 200 OK in 188ms (Views: 177.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2015-06-19 09:58:35 -0500
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 141ms (Views: 139.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/password" for ::1 at 2015-06-19 09:58:39 -0500
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v5VkaGaGj3Ao+ZqFAddcNW0sJLvgpVImxOtMK2llq4kGojyrvfUMrLo/7x5ozf5g3CXwQNWoA6+WGeLi8EgAfA==", "user"=>{"email"=>"espinozab100@gmail.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "espinozab100@gmail.com"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."reset_password_token" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["reset_password_token", "02cb7540030cbb727fd4e93d95a3eeab49a69f0bd01e4c3f44776d056d4d3f58"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mUPDATE "users" SET "reset_password_token" = ?, "reset_password_sent_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["reset_password_token", "02cb7540030cbb727fd4e93d95a3eeab49a69f0bd01e4c3f44776d056d4d3f58"], ["reset_password_sent_at", "2015-06-19 14:58:40.116279"], ["updated_at", "2015-06-19 14:58:40.116929"], ["id", 1]]
+  [1m[35m (8.8ms)[0m  commit transaction
+  Rendered devise/mailer/reset_password_instructions.html.erb (4.8ms)
+
+Devise::Mailer#reset_password_instructions: processed outbound mail in 24.6ms
+Completed 500 Internal Server Error in 274ms (ActiveRecord: 10.6ms)
+
+ActionView::Template::Error (Missing host to link to! Please provide the :host parameter, set default_url_options[:host], or set :only_path to true):
+    2: 
+    3: <p>Someone has requested a link to change your password. You can do this through the link below.</p>
+    4: 
+    5: <p><%= link_to 'Change my password', edit_password_url(@resource, reset_password_token: @token) %></p>
+    6: 
+    7: <p>If you didn't request this, please ignore this email.</p>
+    8: <p>Your password won't change until you access the link above and create a new one.</p>
+  app/views/devise/mailer/reset_password_instructions.html.erb:5:in `_app_views_devise_mailer_reset_password_instructions_html_erb___4052523272007516013_70264984878180'
+
+
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.6ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-06-19 10:20:34 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 181ms (Views: 180.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-06-19 10:20:35 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 138ms (Views: 135.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-06-19 10:20:39 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EnJWu2RrBFkjrA3z/o/96H7b8kgrlkQJH+hMtrlQQoCrRQ54vxiHhbFqeGiXlV+9z9Imsx6bFYBNGuJ/IH3pdQ==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign up"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "espinozab100@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-06-19 14:21:27.950291"], ["current_sign_in_at", "2015-06-19 15:20:39.484416"], ["sign_in_count", 7], ["updated_at", "2015-06-19 15:20:39.485221"], ["id", 1]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 81ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 10:20:39 -0500
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (8.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 102ms (Views: 101.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pins/8" for ::1 at 2015-06-19 10:41:36 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 8], ["votable_type", "Pin"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (3.9ms)
+Completed 200 OK in 111ms (Views: 109.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 10:41:42 -0500
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (1.4ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (50.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 445ms (Views: 441.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/pins/2" for ::1 at 2015-06-19 10:42:01 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 2], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (4.7ms)
+Completed 200 OK in 107ms (Views: 105.7ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/pins/2/like" for ::1 at 2015-06-19 10:42:07 -0500
+Processing by PinsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"xUM3DSgk4NWdCgAXFqkSc3xnxk/8yoqZuGkuPRyQxa3oNXNzN/vyMGvIgNhdMiejfw+Y+sMCjdUVbSJ0JQGK8Q==", "id"=>"2"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."voter_id" = ? AND "votes"."voter_type" = ? AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 2], ["votable_type", "Pin"], ["voter_id", 1], ["voter_type", "User"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "votes" ("votable_id", "votable_type", "voter_id", "voter_type", "vote_flag", "vote_weight", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["votable_id", 2], ["votable_type", "Pin"], ["voter_id", 1], ["voter_type", "User"], ["vote_flag", "t"], ["vote_weight", 1], ["created_at", "2015-06-19 15:42:07.681504"], ["updated_at", "2015-06-19 15:42:07.681504"]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/pins/2
+Completed 302 Found in 8ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/pins/2" for ::1 at 2015-06-19 10:42:07 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 2], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 121ms (Views: 119.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pins/2/edit" for ::1 at 2015-06-19 10:42:13 -0500
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPin Load (0.3ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/edit.html.haml within layouts/application (15.1ms)
+Completed 200 OK in 122ms (Views: 117.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pins/2" for ::1 at 2015-06-19 10:42:20 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 2], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 113ms (Views: 111.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pins/2/edit" for ::1 at 2015-06-19 10:42:22 -0500
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPin Load (2.7ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (21.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/edit.html.haml within layouts/application (33.8ms)
+Completed 200 OK in 382ms (Views: 335.6ms | ActiveRecord: 24.6ms)
+
+
+Started GET "/pins/2/edit" for ::1 at 2015-06-19 10:42:22 -0500
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/edit.html.haml within layouts/application (11.3ms)
+Completed 200 OK in 174ms (Views: 171.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-06-19 10:42:24 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7r9lAP3eoNEHS0p9u2RfiosY/BrDZXfMFX9IwOTC6JXDySF+4gGyNPGJyrLw/2paiHCir/ytcIC4e0SJ3VOnyQ=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 10:42:24 -0500
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.3ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (14.6ms)
+Completed 200 OK in 126ms (Views: 124.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pins/4" for ::1 at 2015-06-19 10:43:22 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 4], ["votable_type", "Pin"]]
+  Rendered pins/show.html.haml within layouts/application (3.3ms)
+Completed 200 OK in 116ms (Views: 114.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 10:43:27 -0500
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.5ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (96.8ms)
+Completed 200 OK in 398ms (Views: 393.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-06-19 11:04:07 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 117ms (Views: 115.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-06-19 11:04:20 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rcVtrYwenGU5VYnHXoa8iEMeJ8IBDDnPPYZ/d78yNaK4cJMqXR96HfswRN1b8pujoSLVwNfad8ATolTkantSYw==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign up"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "espinozab100@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-06-19 15:20:39.484416"], ["current_sign_in_at", "2015-06-19 16:04:21.053540"], ["sign_in_count", 8], ["updated_at", "2015-06-19 16:04:21.055574"], ["id", 1]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 100ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 11:04:21 -0500
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (12.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 117ms (Views: 115.1ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-06-19 11:17:27 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9wrpJkQ7L/hVucSwyXOKRhp0bzs3FIOlthJErACZlz8EUUIMZcIEQlyTz1x/taqfshq9eb1iuoqbJvJRqCqq9w=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 11:17:27 -0500
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 210ms (Views: 208.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-06-19 11:17:29 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 122ms (Views: 120.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 11:19:14 -0500
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.4ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (17.1ms)
+Completed 200 OK in 140ms (Views: 138.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pins/2" for ::1 at 2015-06-19 11:19:24 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 2], ["votable_type", "Pin"]]
+  Rendered pins/show.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 171ms (Views: 169.1ms | ActiveRecord: 0.7ms)
+
+
+Started PUT "/pins/2/like" for ::1 at 2015-06-19 11:19:34 -0500
+Processing by PinsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"fY20Gul5avEyUJjSP01+yoR8EO5GITRzPOVWY4K6p4e7sKl/PQEfKqJlX/2U0jeNsdclRRVvy2DoASJoSiWUPQ==", "id"=>"2"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 2]]
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-06-19 11:19:34 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 136ms (Views: 132.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 11:19:39 -0500
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (18.5ms)
+Completed 200 OK in 128ms (Views: 126.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pins/7" for ::1 at 2015-06-19 11:19:45 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 7], ["votable_type", "Pin"]]
+  Rendered pins/show.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 118ms (Views: 116.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/pins/7/like" for ::1 at 2015-06-19 11:19:51 -0500
+Processing by PinsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"5tsGIRFxaEoAo6FtFn6TtT+pwzit5M0cZeVDXJKJ+asg5htExQkdkZCWZkK94dryCgL2k/6qMg+xATdXWhbKEQ==", "id"=>"7"}
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 7]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-06-19 11:19:51 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 134ms (Views: 132.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-06-19 11:20:02 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZorLC6pvMNJthAswmGo6Hn+GRYqBdPj+3mc/CsIeQeWgt9ZufhdFCf2xzB8z9XNZSi1wIdI6B+0Kg0sBCoFyXw==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign up"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "espinozab100@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-06-19 16:04:21.053540"], ["current_sign_in_at", "2015-06-19 16:20:02.175666"], ["sign_in_count", 9], ["updated_at", "2015-06-19 16:20:02.176572"], ["id", 1]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 90ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 11:20:02 -0500
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (8.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 106ms (Views: 104.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pins/7" for ::1 at 2015-06-19 11:20:06 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 7], ["votable_type", "Pin"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (4.5ms)
+Completed 200 OK in 162ms (Views: 160.2ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/pins/7/like" for ::1 at 2015-06-19 11:20:08 -0500
+Processing by PinsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"iPEpA0ihYh3VhczjVz1pLkp4y0lWdoLNP+odzIuBIg/TUDjLIHvcTHDu04OKXHuKGvIeDtZVbSrt9onvzODrLg==", "id"=>"7"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."voter_id" = ? AND "votes"."voter_type" = ? AND "votes"."vote_scope" IS NULL  [["votable_id", 7], ["votable_type", "Pin"], ["voter_id", 1], ["voter_type", "User"]]
+  [1m[36mActsAsVotable::Vote Load (0.2ms)[0m  [1mSELECT  "votes".* FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."voter_id" = ? AND "votes"."voter_type" = ? AND "votes"."vote_scope" IS NULL  ORDER BY "votes"."id" DESC LIMIT 1[0m  [["votable_id", 7], ["votable_type", "Pin"], ["voter_id", 1], ["voter_type", "User"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pins/7
+Completed 302 Found in 8ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/pins/7" for ::1 at 2015-06-19 11:20:08 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 7], ["votable_type", "Pin"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (6.6ms)
+Completed 200 OK in 113ms (Views: 111.7ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/pins/7/like" for ::1 at 2015-06-19 11:20:10 -0500
+Processing by PinsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"im2/Nmt0uCSrwDvvT9f9k/Ll0Tb5fXOxQ5L1N3ZNs+zRzK7+A64GdQ6rJI+Stu83om8EcXlenFaRjmEUMSx6zQ==", "id"=>"7"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."voter_id" = ? AND "votes"."voter_type" = ? AND "votes"."vote_scope" IS NULL  [["votable_id", 7], ["votable_type", "Pin"], ["voter_id", 1], ["voter_type", "User"]]
+  [1m[36mActsAsVotable::Vote Load (0.1ms)[0m  [1mSELECT  "votes".* FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."voter_id" = ? AND "votes"."voter_type" = ? AND "votes"."vote_scope" IS NULL  ORDER BY "votes"."id" DESC LIMIT 1[0m  [["votable_id", 7], ["votable_type", "Pin"], ["voter_id", 1], ["voter_type", "User"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pins/7
+Completed 302 Found in 13ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/pins/7" for ::1 at 2015-06-19 11:20:10 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 7], ["votable_type", "Pin"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 116ms (Views: 114.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 12:13:20 -0500
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (8.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 111ms (Views: 109.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pins/8" for ::1 at 2015-06-19 12:14:41 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 8], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 106ms (Views: 104.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 16:57:58 -0500
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (4.1ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (82.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 310ms (Views: 292.0ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 18:12:28 -0500
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.4ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (24.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 137ms (ActiveRecord: 1.7ms)
+
+ActionView::Template::Error (undefined local variable or method `confirmed_at' for #<User:0x007fcfb1157f10>):
+    10:     .container
+    11:       .navbar-brand= link_to "VizualizeIt", root_path
+    12: 
+    13:       - if user_signed_in?
+    14:         %ul.nav.navbar-nav.navbar-right
+    15:           %li.newPost= link_to "New Post", new_pin_path, class: "nvli1"
+    16:           %li= link_to "Account", edit_user_registration_path
+  app/views/layouts/application.html.haml:13:in `_app_views_layouts_application_html_haml___4134069098922861027_70264961055680'
+
+
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.6ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-06-19 18:13:39 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7ypN3mPO6Dh570AD0UhnPsAXbFnx0Yr0+V4aOi0Pswi0i1wWCxRWadyEX2MMKXWakJ25HnHyZRMrQo4Zam56KQ=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-06-19 18:13:39 -0500
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.3ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 121ms (Views: 120.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-06-19 18:13:41 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (38.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (56.3ms)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `new_confirmation_path' for #<#<Class:0x007fcfb1aa2d90>:0x007fcfb1aa2228>):
+    11: <% end -%>
+    12: 
+    13: <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+    14:   <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+    15: <% end -%>
+    16: 
+    17: <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+  app/views/devise/shared/_links.html.erb:14:in `_app_views_devise_shared__links_html_erb__1401277733907090977_70265006710080'
+  app/views/devise/sessions/new.html.erb:29:in `_app_views_devise_sessions_new_html_erb___3823867697102291298_70264985095740'
+
+
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.1ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-06-19 18:13:42 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (33.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (40.9ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `new_confirmation_path' for #<#<Class:0x007fcfb1aa2d90>:0x007fcfad5e8560>):
+    11: <% end -%>
+    12: 
+    13: <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+    14:   <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+    15: <% end -%>
+    16: 
+    17: <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
+  app/views/devise/shared/_links.html.erb:14:in `_app_views_devise_shared__links_html_erb__1401277733907090977_70265006710080'
+  app/views/devise/sessions/new.html.erb:29:in `_app_views_devise_sessions_new_html_erb___3823867697102291298_70264985095740'
+
+
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-06-22 09:33:19 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 222ms (Views: 208.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2015-06-22 09:33:19 -0500
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2015-06-22 09:33:19 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-06-22 09:33:19 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-06-22 09:33:19 -0500
+
+
+Started GET "/assets/pins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-22 09:33:19 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-22 09:33:19 -0500
+
+
+Started GET "/assets/application.self-eb42dc03f2d50e30f81e70d33ee612c43b7fa7c889043d10705848e9395cdf36.css?body=1" for ::1 at 2015-06-22 09:33:19 -0500
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-06-22 09:33:19 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-06-22 09:33:19 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-06-22 09:33:19 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-06-22 09:33:19 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-06-22 09:33:19 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-06-22 09:33:19 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-06-22 09:33:19 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-06-22 09:33:19 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-06-22 09:33:19 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-06-22 09:33:19 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-06-22 09:33:19 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-22 09:33:20 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-22 09:33:20 -0500
+
+
+Started GET "/assets/pins.self-68755679ee21f68a2a14ab30434947b80d70dc96df4abd5dd2e3dbb89a7909e0.js?body=1" for ::1 at 2015-06-22 09:33:20 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-06-22 09:33:20 -0500
+
+
+Started POST "/users/sign_in" for ::1 at 2015-06-22 09:33:29 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bUdz3yik4ygHRUbI59oQd6mj+9j1Xaxc66SQ0D6Q+q4eTkcPJ1m8XmoctOSQYKBdQmxJMwVDGbRfNOF1/ShuTg==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign up"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "espinozab100@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-06-19 16:20:02.175666"], ["current_sign_in_at", "2015-06-22 14:33:29.985380"], ["sign_in_count", 10], ["updated_at", "2015-06-22 14:33:29.986652"], ["id", 1]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 89ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2015-06-22 09:33:30 -0500
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (17.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 134ms (Views: 128.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pins/6" for ::1 at 2015-06-22 09:33:35 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 6], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 110ms (Views: 107.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-06-22 09:33:35 -0500
+
+
+Started GET "/pins/6/edit" for ::1 at 2015-06-22 09:33:38 -0500
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/edit.html.haml within layouts/application (13.6ms)
+Completed 200 OK in 143ms (Views: 138.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pins/6" for ::1 at 2015-06-22 09:33:41 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 6], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (7.3ms)
+Completed 200 OK in 115ms (Views: 112.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pins/6/edit" for ::1 at 2015-06-22 09:33:44 -0500
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPin Load (0.9ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/edit.html.haml within layouts/application (40.8ms)
+Completed 200 OK in 171ms (Views: 164.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pins/6/edit" for ::1 at 2015-06-22 09:33:44 -0500
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/edit.html.haml within layouts/application (53.5ms)
+Completed 200 OK in 166ms (Views: 164.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pins/6/edit" for ::1 at 2015-06-22 09:33:44 -0500
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/edit.html.haml within layouts/application (32.8ms)
+Completed 200 OK in 184ms (Views: 180.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pins/6" for ::1 at 2015-06-22 09:33:46 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 6], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 144ms (Views: 141.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pins/6" for ::1 at 2015-06-22 09:33:46 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 6], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 156ms (Views: 155.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pins/6" for ::1 at 2015-06-22 09:33:47 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 6], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 142ms (Views: 140.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pins/6" for ::1 at 2015-06-22 09:33:47 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 6], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 195ms (Views: 193.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-06-22 09:33:49 -0500
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.3ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (17.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 122ms (Views: 120.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pins/5" for ::1 at 2015-06-22 09:33:53 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 5], ["votable_type", "Pin"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 173ms (Views: 170.8ms | ActiveRecord: 0.6ms)
+
+
+Started PUT "/pins/5/like" for ::1 at 2015-06-22 09:33:55 -0500
+Processing by PinsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"VNUlM0+xvpcDI2BHQ9nvJHPmJgwgZnpr3/Fbkk4cvfSaj5t3u+HT0pgAUII9mwSEnO8rxXFqSwDIeN4zMPRZRA==", "id"=>"5"}
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."voter_id" = ? AND "votes"."voter_type" = ? AND "votes"."vote_scope" IS NULL  [["votable_id", 5], ["votable_type", "Pin"], ["voter_id", 1], ["voter_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "votes" ("votable_id", "votable_type", "voter_id", "voter_type", "vote_flag", "vote_weight", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["votable_id", 5], ["votable_type", "Pin"], ["voter_id", 1], ["voter_type", "User"], ["vote_flag", "t"], ["vote_weight", 1], ["created_at", "2015-06-22 14:33:55.627002"], ["updated_at", "2015-06-22 14:33:55.627002"]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pins/5
+Completed 302 Found in 27ms (ActiveRecord: 10.8ms)
+
+
+Started GET "/pins/5" for ::1 at 2015-06-22 09:33:55 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 5], ["votable_type", "Pin"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (5.6ms)
+Completed 200 OK in 104ms (Views: 102.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for ::1 at 2015-06-22 09:34:01 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 113ms (Views: 111.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-06-22 09:34:05 -0500
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.3ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (23.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 205ms (Views: 203.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-06-22 09:44:06 -0500
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (14.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 121ms (Views: 119.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2015-06-22 09:44:06 -0500
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2015-06-22 09:44:06 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-22 09:44:06 -0500
+
+
+Started GET "/assets/pins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-22 09:44:06 -0500
+
+
+Started GET "/assets/application.self-eb42dc03f2d50e30f81e70d33ee612c43b7fa7c889043d10705848e9395cdf36.css?body=1" for ::1 at 2015-06-22 09:44:06 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-06-22 09:44:06 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-06-22 09:44:06 -0500
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-06-22 09:44:06 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-06-22 09:44:06 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-06-22 09:44:07 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-06-22 09:44:07 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-06-22 09:44:07 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-06-22 09:44:07 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-06-22 09:44:07 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-06-22 09:44:07 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-06-22 09:44:07 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-06-22 09:44:07 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-06-22 09:44:07 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-22 09:44:07 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-22 09:44:07 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-06-22 09:44:07 -0500
+
+
+Started GET "/assets/pins.self-68755679ee21f68a2a14ab30434947b80d70dc96df4abd5dd2e3dbb89a7909e0.js?body=1" for ::1 at 2015-06-22 09:44:07 -0500
+
+
+Started GET "/pins/7" for ::1 at 2015-06-22 09:44:09 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 7], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (5.8ms)
+Completed 200 OK in 99ms (Views: 97.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-06-22 09:44:09 -0500
+
+
+Started PUT "/pins/7/like" for ::1 at 2015-06-22 09:44:11 -0500
+Processing by PinsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"FNJfysaa4pc9LndwoRvLKdaHaGzG6N4n1lgVj6TYkXnaiOGOMsqP0qYNR7XfWSCJOY5lpZfk70zB0ZAu2jB1yQ==", "id"=>"7"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."voter_id" = ? AND "votes"."voter_type" = ? AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 7], ["votable_type", "Pin"], ["voter_id", 1], ["voter_type", "User"]]
+  [1m[35mActsAsVotable::Vote Load (0.2ms)[0m  SELECT  "votes".* FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."voter_id" = ? AND "votes"."voter_type" = ? AND "votes"."vote_scope" IS NULL  ORDER BY "votes"."id" DESC LIMIT 1  [["votable_id", 7], ["votable_type", "Pin"], ["voter_id", 1], ["voter_type", "User"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/pins/7
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/pins/7" for ::1 at 2015-06-22 09:44:11 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 7], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (4.6ms)
+Completed 200 OK in 129ms (Views: 126.2ms | ActiveRecord: 0.5ms)
+
+
+Started PUT "/pins/7/like" for ::1 at 2015-06-22 09:44:13 -0500
+Processing by PinsController#upvote as HTML
+  Parameters: {"authenticity_token"=>"4rEGLsaFRahuYRkvSDMKcnKV8xTLDpXAbAAPGYXTKcgs67hqMtUo7fVCKeo2ceHSnZz+3ZoCpKt7iYq4+zvNeA==", "id"=>"7"}
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."voter_id" = ? AND "votes"."voter_type" = ? AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 7], ["votable_type", "Pin"], ["voter_id", 1], ["voter_type", "User"]]
+  [1m[35mActsAsVotable::Vote Load (0.8ms)[0m  SELECT  "votes".* FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."voter_id" = ? AND "votes"."voter_type" = ? AND "votes"."vote_scope" IS NULL  ORDER BY "votes"."id" DESC LIMIT 1  [["votable_id", 7], ["votable_type", "Pin"], ["voter_id", 1], ["voter_type", "User"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/pins/7
+Completed 302 Found in 14ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/pins/7" for ::1 at 2015-06-22 09:44:13 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 7], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 116ms (Views: 113.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pins/7/edit" for ::1 at 2015-06-22 09:44:15 -0500
+Processing by PinsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/edit.html.haml within layouts/application (16.9ms)
+Completed 200 OK in 112ms (Views: 110.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-06-22 09:44:17 -0500
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (12.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 108ms (Views: 107.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-06-22 09:50:14 -0500
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.2) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/brandonespinoza/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/brandonespinoza/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/brandonespinoza/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.2ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.7ms)
+
+
+Started GET "/" for ::1 at 2015-06-22 09:50:24 -0500
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.2) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/brandonespinoza/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/brandonespinoza/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/brandonespinoza/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.9ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (51.3ms)
+
+
+Started GET "/" for ::1 at 2015-06-22 09:50:26 -0500
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.1) lib/active_record/migration.rb:393:in `check_pending!'
+  activerecord (4.2.1) lib/active_record/migration.rb:374:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.2) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.2) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.2) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.2) lib/rack/lock.rb:17:in `call'
+  rack (1.6.2) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.2) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/brandonespinoza/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/brandonespinoza/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/brandonespinoza/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/brandonespinoza/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.7ms)
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePins (20150617183913)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "pins" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150617183913"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to DeviseCreateUsers (20150618005601)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime, "confirmation_sent_at" datetime, "unconfirmed_email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150618005601"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Migrating to AddUserIdToPins (20150618010303)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mALTER TABLE "pins" ADD "user_id" interger[0m
+  [1m[35m (0.2ms)[0m  CREATE  INDEX "index_pins_on_user_id" ON "pins" ("user_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150618010303"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to AddAttachmentImageToPins (20150618195212)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "pins" ADD "image_file_name" varchar
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "pins" ADD "image_content_type" varchar[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "pins" ADD "image_file_size" integer
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "pins" ADD "image_updated_at" datetime[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150618195212"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to ActsAsVotableMigration (20150619022949)
+  [1m[35m (0.1ms)[0m  begin transaction
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in up at /Users/brandonespinoza/Desktop/code/RUBY/VizualizeIt/db/migrate/20150619022949_acts_as_votable_migration.rb:12)
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "votes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "votable_id" integer, "votable_type" varchar, "voter_id" integer, "voter_type" varchar, "vote_flag" boolean, "vote_scope" varchar, "vote_weight" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_votes_on_voter_id_and_voter_type_and_vote_scope" ON "votes" ("voter_id", "voter_type", "vote_scope")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_votes_on_voter_id_and_voter_type_and_vote_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_votes_on_voter_id_and_voter_type_and_vote_scope' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_votes_on_votable_id_and_votable_type_and_vote_scope" ON "votes" ("votable_id", "votable_type", "vote_scope")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150619022949"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_pins_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_pins_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_votes_on_votable_id_and_votable_type_and_vote_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_votes_on_votable_id_and_votable_type_and_vote_scope' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_votes_on_voter_id_and_voter_type_and_vote_scope' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_votes_on_voter_id_and_voter_type_and_vote_scope' AND type='index'
+
+
+
+Started GET "/" for ::1 at 2015-06-22 09:51:05 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.1ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  Rendered pins/index.html.haml within layouts/application (3.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 400ms (Views: 373.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/pins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/application.self-eb42dc03f2d50e30f81e70d33ee612c43b7fa7c889043d10705848e9395cdf36.css?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/pins.self-68755679ee21f68a2a14ab30434947b80d70dc96df4abd5dd2e3dbb89a7909e0.js?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-06-22 09:51:06 -0500
+
+
+Started GET "/" for ::1 at 2015-06-22 09:51:11 -0500
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  Rendered pins/index.html.haml within layouts/application (0.7ms)
+Completed 200 OK in 94ms (Views: 92.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/masonry/transitions.self-a7dd920491429cc09dda36f003350cf98f5cec3c45d00888fab83293dce6ce92.css?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-f7aef9d98ee5ece34a6a92a6a15bba777d93e8d908b75c95a85088277f394200.js?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/pins.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/application.self-eb42dc03f2d50e30f81e70d33ee612c43b7fa7c889043d10705848e9395cdf36.css?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-896ab026e6823f5cef2441e07dac53d0692a5b772ac58b1ce20aa624c342d3f4.js?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/bootstrap/button.self-d19f3e2bcd3a7a4d75c11b9141b3fabd2c11987da1e99c85548ec3ecf8db30c3.js?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-b2e5e14483e6c31343a83861b7d487620f143d6fc2d07d5ae7544b6b225ba6be.js?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-93820e9b486e375a7fb4477602def3a6f8381fa6d50938d5378297ffbe4a1248.js?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-30536ae4d54b2685c26b5787ed0eb549a9075717fe690cce6270873bedf2df00.js?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-9616c4e856b57659b67da3c6f2adcd584b5601ef4bebcdadab8ebb387d80bb25.js?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-9b77df34cbbb08ec93a806d6cdb741f04e3dbf3389978a0679146f2d2987bc89.js?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-c5c6ed008955656d345067e9821d79f1216b8383134d08465d4aa1a33a2b93b4.js?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-bcfe54f3132bf16a8c5ce4289e47eba488f6522a08f49f378a037061c6c7aa4c.js?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-3aa41fbe871573b34e0ebddf31598cd5a11a9841ca85f90934ea46326e46626d.js?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-b73e9c9111d01148e24bbc46e096782e024dc5db630e7078cf11ed2587ef8551.js?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/pins.self-68755679ee21f68a2a14ab30434947b80d70dc96df4abd5dd2e3dbb89a7909e0.js?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-06-22 09:51:12 -0500
+
+
+Started GET "/users/sign_in" for ::1 at 2015-06-22 09:51:16 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (73.2ms)
+Completed 200 OK in 171ms (Views: 161.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-06-22 09:51:26 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2LFyEUGh1SHi5X6iPVxNmX4DV3FBTru3ITEudNdcVbAW68xVtfG4ZHnGTmdDHqY5kQpauBBCitw2uKvVqbSxAA==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign up"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "espinozab100@gmail.com"]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.2ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2LFyEUGh1SHi5X6iPVxNmX4DV3FBTru3ITEudNdcVbAW68xVtfG4ZHnGTmdDHqY5kQpauBBCitw2uKvVqbSxAA==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign up"}
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 187ms (Views: 112.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-06-22 09:51:31 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (64.0ms)
+Completed 200 OK in 233ms (Views: 231.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-06-22 09:51:34 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (63.1ms)
+Completed 200 OK in 220ms (Views: 218.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-06-22 09:51:42 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"umr6W/mbJfuwfjXMLOyU85FssCiC6xUcB8PSbfxKrLd0MEQfDctIvitdBQlSrn9TfmW94dPnJHcQSlfMgqJIBw==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign up"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "espinozab100@gmail.com"]]
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.3ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"umr6W/mbJfuwfjXMLOyU85FssCiC6xUcB8PSbfxKrLd0MEQfDctIvitdBQlSrn9TfmW94dPnJHcQSlfMgqJIBw==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign up"}
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 194ms (Views: 115.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-06-22 09:51:47 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 211ms (Views: 209.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-06-22 09:51:48 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 129ms (Views: 127.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-06-22 09:52:01 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AxtvzLozBG7sCVP8+3m9zwHy/jVgYxv4xeaGeOrvbHDNQdGITmNpK3cqYzmFO1Zv7vvz/DFvKpPSbwPZlAeIwA==", "user"=>{"email"=>"espinozab100@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'espinozab100@gmail.com' LIMIT 1
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "espinozab100@gmail.com"], ["encrypted_password", "$2a$10$oSbuGDW3WtR4ILNp2NWwv.1wUq1/Pc22KenE2zDb/DoylZ9wBy30K"], ["created_at", "2015-06-22 14:52:01.365076"], ["updated_at", "2015-06-22 14:52:01.365076"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-06-22 14:52:01.371364"], ["current_sign_in_at", "2015-06-22 14:52:01.371364"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2015-06-22 14:52:01.372061"], ["id", 1]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 114ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/" for ::1 at 2015-06-22 09:52:01 -0500
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.2ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  Rendered pins/index.html.haml within layouts/application (1.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 129ms (Views: 126.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pins/new" for ::1 at 2015-06-22 09:52:04 -0500
+Processing by PinsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/_form.html.haml (12.1ms)
+  Rendered pins/new.html.haml within layouts/application (15.6ms)
+Completed 200 OK in 132ms (Views: 111.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/pins" for ::1 at 2015-06-22 09:53:43 -0500
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2ymwYKQv6HmU8FP4R5AnKRhBsqo2zKJfPBz4opCsWhkVcw4kUH+FPA/TYz050syJ90i/Y2fAkzQrlX0D7kS+qQ==", "pin"=>{"title"=>"NSS-8 Logo", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb7c0e405c8 @tempfile=#<Tempfile:/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/RackMultipart20150622-5627-fg7gqx.png>, @original_filename="nss-8_final_2_1.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"nss-8_final_2_1.png\"\r\nContent-Type: image/png\r\n">, "description"=>"Our Class Site Logo "}}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Command :: file -b --mime '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/1ef0989d4aca3ca53c5cd00108ccf4d220150622-5627-gcr5hz.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/1ef0989d4aca3ca53c5cd00108ccf4d220150622-5627-1pu8xxl.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/1ef0989d4aca3ca53c5cd00108ccf4d220150622-5627-1pu8xxl.png[0]'
+Command :: convert '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/1ef0989d4aca3ca53c5cd00108ccf4d220150622-5627-1pu8xxl.png[0]' -auto-orient -resize "300x300>" '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/50ebc83063aad13083ea41356de3c5f220150622-5627-1713c1w'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/1ef0989d4aca3ca53c5cd00108ccf4d220150622-5627-584k5e.png'
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "pins" ("title", "description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "NSS-8 Logo"], ["description", "Our Class Site Logo "], ["image_file_name", "nss-8_final_2_1.png"], ["image_content_type", "image/png"], ["image_file_size", 73454], ["image_updated_at", "2015-06-22 14:53:43.566743"], ["user_id", 1], ["created_at", "2015-06-22 14:53:43.756500"], ["updated_at", "2015-06-22 14:53:43.756500"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/pins/1
+Completed 302 Found in 206ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/pins/1" for ::1 at 2015-06-22 09:53:43 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 1], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 116ms (Views: 112.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular-fe185d11a49676890d47bb783312a0cda5a44c4039214094e7957b4c040ef11c.woff2" for ::1 at 2015-06-22 09:53:43 -0500
+
+
+Started GET "/" for ::1 at 2015-06-22 09:54:22 -0500
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.4ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (6.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 111ms (Views: 109.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pins/new" for ::1 at 2015-06-22 09:54:28 -0500
+Processing by PinsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/_form.html.haml (7.7ms)
+  Rendered pins/new.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 114ms (Views: 112.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/pins" for ::1 at 2015-06-22 09:56:50 -0500
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TLu7dxbZJW5ycf4EJv4cq8OJHJ8AUOlXtilYNvJ7YmeC4QUz4olIK+lSzsFYvPcLLIARVlFc2DyhoN2XjJOG1w==", "pin"=>{"title"=>"Game 7 Finals Ping Pong", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb7bdfb3ed0 @tempfile=#<Tempfile:/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/RackMultipart20150622-5627-wrtm8b.jpg>, @original_filename="pongaustin.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"pongaustin.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"Game 7 Austin and Brandon take the series 25-23"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Command :: file -b --mime '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/f4381624e3bc1b586b4e06c0040c625e20150622-5627-1o7x011.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/f4381624e3bc1b586b4e06c0040c625e20150622-5627-1lcjkv3.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/f4381624e3bc1b586b4e06c0040c625e20150622-5627-1lcjkv3.jpg[0]'
+Command :: convert '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/f4381624e3bc1b586b4e06c0040c625e20150622-5627-1lcjkv3.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/9e5a76088faca43a2df20980e233149820150622-5627-1mnrz75'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/f4381624e3bc1b586b4e06c0040c625e20150622-5627-1kjqcco.jpg'
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "pins" ("title", "description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Game 7 Finals Ping Pong"], ["description", "Game 7 Austin and Brandon take the series 25-23"], ["image_file_name", "pongaustin.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 969149], ["image_updated_at", "2015-06-22 14:56:50.185506"], ["user_id", 1], ["created_at", "2015-06-22 14:56:50.724830"], ["updated_at", "2015-06-22 14:56:50.724830"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/pins/2
+Completed 302 Found in 558ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/pins/2" for ::1 at 2015-06-22 09:56:50 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPin Load (0.3ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 2], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 107ms (Views: 105.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-06-22 09:57:10 -0500
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (5.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 108ms (Views: 106.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pins/new" for ::1 at 2015-06-22 09:57:13 -0500
+Processing by PinsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/_form.html.haml (6.5ms)
+  Rendered pins/new.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 106ms (Views: 104.6ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/pins" for ::1 at 2015-06-22 09:59:55 -0500
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JpJYJLeugfb9ULxmINh8UyNp77lhFRSicaMoa+UffuDoyOZgQ/7ss2ZzjKNempfzzGDicDAZJclmKq3Km/eaUA==", "pin"=>{"title"=>"Eric Brengle and Brandon Espinoza Photoshoot", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb7ba7d9208 @tempfile=#<Tempfile:/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/RackMultipart20150622-5627-1fhgst5.jpg>, @original_filename="photoday.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"photoday.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"Espinoza and Brengle getting their team photos and signing photographs for the fans before the big game!!!"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Command :: file -b --mime '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/353e0b5b2e844369bc61ce944aa02ae520150622-5627-1kad7i9.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/353e0b5b2e844369bc61ce944aa02ae520150622-5627-1a64swl.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/353e0b5b2e844369bc61ce944aa02ae520150622-5627-1a64swl.jpg[0]'
+Command :: convert '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/353e0b5b2e844369bc61ce944aa02ae520150622-5627-1a64swl.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/4fa8e587ba20bd105f6dd7e0a6fdafe220150622-5627-1ticb4f'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/353e0b5b2e844369bc61ce944aa02ae520150622-5627-x1p6db.jpg'
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "pins" ("title", "description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Eric Brengle and Brandon Espinoza Photoshoot"], ["description", "Espinoza and Brengle getting their team photos and signing photographs for the fans before the big game!!!"], ["image_file_name", "photoday.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 1420647], ["image_updated_at", "2015-06-22 14:59:55.996068"], ["user_id", 1], ["created_at", "2015-06-22 14:59:56.543885"], ["updated_at", "2015-06-22 14:59:56.543885"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pins/3
+Completed 302 Found in 568ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/pins/3" for ::1 at 2015-06-22 09:59:56 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 3], ["votable_type", "Pin"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 113ms (Views: 112.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pins/new" for ::1 at 2015-06-22 10:00:08 -0500
+Processing by PinsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/_form.html.haml (7.9ms)
+  Rendered pins/new.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 117ms (Views: 115.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/pins" for ::1 at 2015-06-22 10:02:31 -0500
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ExNkT5KusNuWszXIyiBpDgGJxnfdHqWOGiqbRq0Qs6DdSdoLZv7dng2QBQ20YoKu7oDLvowSlOUNox7n0/hXEA==", "pin"=>{"title"=>"Brandon Howard's Portrait Edit", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb7bf36c1c0 @tempfile=#<Tempfile:/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/RackMultipart20150622-5627-vlcfk2.jpg>, @original_filename="brayhoward3.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"brayhoward3.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"This Howard's Portrait edited with Photoshop by Me."}}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Command :: file -b --mime '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/5662196a86ca324d221f61195226df8a20150622-5627-16f97un.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/5662196a86ca324d221f61195226df8a20150622-5627-u0dpvl.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/5662196a86ca324d221f61195226df8a20150622-5627-u0dpvl.jpg[0]'
+Command :: convert '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/5662196a86ca324d221f61195226df8a20150622-5627-u0dpvl.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/31a210697b0a8f75d73486ee0d11992b20150622-5627-109lc2i'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: file -b --mime '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/5662196a86ca324d221f61195226df8a20150622-5627-m7k6rn.jpg'
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "pins" ("title", "description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Brandon Howard's Portrait Edit"], ["description", "This Howard's Portrait edited with Photoshop by Me."], ["image_file_name", "brayhoward3.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 597906], ["image_updated_at", "2015-06-22 15:02:31.109762"], ["user_id", 1], ["created_at", "2015-06-22 15:02:31.251854"], ["updated_at", "2015-06-22 15:02:31.251854"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/pins/4
+Completed 302 Found in 162ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/pins/4" for ::1 at 2015-06-22 10:02:31 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPin Load (0.1ms)[0m  [1mSELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 4], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (4.9ms)
+Completed 200 OK in 105ms (Views: 103.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-06-22 10:03:23 -0500
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (6.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 114ms (Views: 112.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pins/new" for ::1 at 2015-06-22 10:03:34 -0500
+Processing by PinsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/_form.html.haml (6.7ms)
+  Rendered pins/new.html.haml within layouts/application (8.5ms)
+Completed 200 OK in 112ms (Views: 109.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/pins" for ::1 at 2015-06-22 10:04:37 -0500
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"09gc5PEvoNkP7tpMMGgwPiXyQbgXo6qrnKSxYoX6pEkdgqKgBX/NnJTN6olOKtueyvtMcUavm8CLLTTD+xJA+Q==", "pin"=>{"title"=>"Natchez Trace", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb7c0943a48 @tempfile=#<Tempfile:/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/RackMultipart20150622-5627-wqc70r.jpg>, @original_filename="DSC_0924.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"DSC_0924.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"Shooting at the Natchez Trace bridge. What a beautiful sunset!!"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Command :: file -b --mime '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/6ef5dcba9c5a82cf28c9e471a5d42db420150622-5627-14raqay.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/6ef5dcba9c5a82cf28c9e471a5d42db420150622-5627-kpfwd1.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/6ef5dcba9c5a82cf28c9e471a5d42db420150622-5627-kpfwd1.jpg[0]'
+Command :: convert '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/6ef5dcba9c5a82cf28c9e471a5d42db420150622-5627-kpfwd1.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/589582782df1f0e48da74ad77ed0689620150622-5627-ahy0tq'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/6ef5dcba9c5a82cf28c9e471a5d42db420150622-5627-1d4tmy3.jpg'
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pins" ("title", "description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Natchez Trace"], ["description", "Shooting at the Natchez Trace bridge. What a beautiful sunset!!"], ["image_file_name", "DSC_0924.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 1292824], ["image_updated_at", "2015-06-22 15:04:37.231016"], ["user_id", 1], ["created_at", "2015-06-22 15:04:38.797572"], ["updated_at", "2015-06-22 15:04:38.797572"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pins/5
+Completed 302 Found in 1581ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/pins/5" for ::1 at 2015-06-22 10:04:38 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPin Load (0.1ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 5], ["votable_type", "Pin"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 106ms (Views: 104.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-06-22 10:04:41 -0500
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.3ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (18.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 152ms (Views: 151.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pins/new" for ::1 at 2015-06-22 10:06:32 -0500
+Processing by PinsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/_form.html.haml (8.9ms)
+  Rendered pins/new.html.haml within layouts/application (10.9ms)
+Completed 200 OK in 108ms (Views: 106.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/pins" for ::1 at 2015-06-22 10:08:08 -0500
+Processing by PinsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+12pN7YLFHN6m386SbG+iL51Q393PhlNvAgAJL80iIA1BxdzQlt5NuG4T/8381UoUXxOtiYyKCargYWFwdxsMA==", "pin"=>{"title"=>"Mexico City ", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fb7bf060f80 @tempfile=#<Tempfile:/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/RackMultipart20150622-5627-qm23bk.jpg>, @original_filename="MexicoCity.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"pin[image]\"; filename=\"MexicoCity.jpg\"\r\nContent-Type: image/jpeg\r\n">, "description"=>"Mexico City SkyScraper View! Theres about 25 million people who live in Mexico City!"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Command :: file -b --mime '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/c96be27bd09530023e173ebc790dc56720150622-5627-k58hs1.jpg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/c96be27bd09530023e173ebc790dc56720150622-5627-t0ps35.jpg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/c96be27bd09530023e173ebc790dc56720150622-5627-t0ps35.jpg[0]'
+Command :: convert '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/c96be27bd09530023e173ebc790dc56720150622-5627-t0ps35.jpg[0]' -auto-orient -resize "300x300>" '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/51083cfa9bb14b4a4cd41b619858b0b620150622-5627-1vt3fsx'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: file -b --mime '/var/folders/4x/p8g0ssh13tjchpd2mwcm557w0000gn/T/c96be27bd09530023e173ebc790dc56720150622-5627-ego5bl.jpg'
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "pins" ("title", "description", "image_file_name", "image_content_type", "image_file_size", "image_updated_at", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Mexico City "], ["description", "Mexico City SkyScraper View! Theres about 25 million people who live in Mexico City!"], ["image_file_name", "MexicoCity.jpg"], ["image_content_type", "image/jpeg"], ["image_file_size", 11992464], ["image_updated_at", "2015-06-22 15:08:08.242343"], ["user_id", 1], ["created_at", "2015-06-22 15:08:10.700993"], ["updated_at", "2015-06-22 15:08:10.700993"]]
+  [1m[36m (12.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/pins/6
+Completed 302 Found in 2554ms (ActiveRecord: 12.6ms)
+
+
+Started GET "/pins/6" for ::1 at 2015-06-22 10:08:10 -0500
+Processing by PinsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mPin Load (0.2ms)[0m  SELECT  "pins".* FROM "pins" WHERE "pins"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = ? AND "votes"."votable_type" = ? AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 6], ["votable_type", "Pin"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered pins/show.html.haml within layouts/application (7.2ms)
+Completed 200 OK in 127ms (Views: 124.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-06-22 10:08:14 -0500
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.5ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (14.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 161ms (Views: 159.5ms | ActiveRecord: 0.8ms)

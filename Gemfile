@@ -32,7 +32,11 @@ gem 'masonry-rails', '~> 0.2.4'
 
 gem 'acts_as_votable', '~> 0.10.0'
 
-gem 'sdoc', '~> 0.4.0', 		group: :doc
+gem 'sdoc', '~> 0.4.0',         group: :doc
 
-gem 'spring',		group: :development
+gem 'spring',       group: :development
 
+group :production do
+  gem 'puma'
+  gem 'rails_12factor'
+end
