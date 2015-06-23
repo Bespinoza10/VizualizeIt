@@ -9,6 +9,10 @@
           <%= f.error_notification %>
 
           <div class="form-group">
+
+            <%= f.input :username, required: true, autofocus: true, input_html: {class: 'form-control'} %>
+          </div>
+          <div class="form-group">
             <%= f.input :email, required: true, autofocus: true, input_html: {class: 'form-control'} %>
           </div>
 
@@ -19,7 +23,7 @@
           </div>
 
           <div class="form-group">
-            <%= f.input :password, autocomplete: "off", hint: "leave it blank if you don't want to change it", required: false , input_html: {class: 'form-control'}%>
+            <%= f.input :password, autocomplete: "off", hint: "Leave it blank if you don't want to change it", required: false , input_html: {class: 'form-control'}%>
           </div>
 
           <div class="form-group">
@@ -28,7 +32,7 @@
           </div>
 
           <div class="form-group">
-            <%= f.input :current_password, hint: "we need your current password to confirm your changes", required: true, input_html: {class: 'form-control'} %>
+            <%= f.input :current_password, hint: "We need your current password to confirm your changes", required: true, input_html: {class: 'form-control'} %>
           </div>
 
           <div class="form-actions">
