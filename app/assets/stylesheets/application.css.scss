@@ -17,18 +17,24 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
 
 body {
-    background: #f5f5f5;
+    background: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
 }
 
+.navbar{
+  min-height: 100px;
+  margin-bottom: 100px;
+}
+
 nav.navbar.navbar-default{
   background: #fff;
-  border-bottom: 2px solid #008dff;
+  border-bottom: 2px solid #2F3238;
   border-radius: 0px;
 }
 .navbar-default .navbar-nav > li > a.nvli1{
@@ -37,22 +43,31 @@ nav.navbar.navbar-default{
 
 .navbar-default .navbar-nav > li > a{
   color: #000;
+  font-family: 'Lato', sans-serif;
 }
 
+.container{
+  margin-top: 20px;
+}
 nav {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
     .navbar-brand {
         a {
-            color: #008dff;
-            font-weight: bold;
+            color: #2F3238;
+            font-family: 'Lato', sans-serif;
+            font-size: 30px;
             &:hover {
                 text-decoration: none;
             }
         }
     }
     .newPost{
-      background: #008dff;
+      background: #2F3238;
 
+    }
+    .signout{
+      border: solid 2px #2F3238;
+      border-radius: 5px;
     }
 }
 
@@ -62,7 +77,7 @@ nav {
   .box {
       margin: 10px;
       width: 350px;
-      box-shadow: 0 1px 2px 0 rgba(0, 141, 255, 0.4);
+      box-shadow: 0 0 5px -1px #2F3238;
       border-radius: 3px;
       text-align: center;
       img {
@@ -149,4 +164,40 @@ nav {
 
 textarea {
     min-height: 250px;
+}
+
+
+#comments {
+  padding-bottom: 4rem;
+  width: 50%;
+  .comment_count {
+    border-bottom: 1px solid #E9E9E9;
+    padding-bottom: .5rem;
+    margin-bottom: 0;
+  }
+  .comment {
+    padding: 2rem 0;
+    border-bottom: 1px solid #E9E9E9;
+    padding-left: 5%;
+    .username {
+      font-size: 1.3rem;
+      color: #333233;
+      margin: 0 0 .5rem 0;
+    }
+    .content {
+      margin: 0;
+      color: #969696;
+    }
+  }
+  .comment_content {
+    margin-top: 2.5rem;
+    textarea {
+      width: 100%;
+      margin: 1rem 0;
+      min-height: 150px;
+      border: 1px solid #E4E4E4;
+      background: #F8F9FA;
+      border-radius: 0.3rem;
+    }
+  }
 }

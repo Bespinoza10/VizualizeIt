@@ -19,3 +19,15 @@
               - if user_signed_in?
                 = link_to "Edit", edit_pin_path, class: "showbtn btn btn-default"
                 = link_to "Delete", pin_path, method: :delete, data: {confirm: "Are you sure?"}, class: "deletebtn btn btn-default"
+
+
+  #comments.col-md-6.col-md-offset-3
+    .panel.panel-default
+      .panel-body
+        %h2.comment_count= pluralize(@pin.comments.count, "Comment")
+        - @comments.each do |comment|
+          .comment
+            %p.username= comment.user.name
+            %p.content= comment.content
+
+        = render "comments/form"

@@ -1,0 +1,3 @@
+= simple_form_for([@pin, @pin.comments.build]) do |f|
+  = f.input :content, label: "Reply to Thread"
+  = f.button :submit, class: "button"
