@@ -4,6 +4,10 @@
       = link_to (image_tag pin.image.url), pin
       .panel-body
         %h2= link_to pin.title, pin
+        %p= "Comments:"
+        %p= pin.comments.count
+        %span.glyphicon.glyphicon-heart
+          = pin.get_upvotes.size
         %p.user
           Submitted by:
           = pin.user.username
