@@ -43830,3 +43830,117 @@ Processing by PinsController#index as HTML
   [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
   [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
 Completed 200 OK in 237ms (Views: 231.1ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/pins?category=Sports" for ::1 at 2015-06-24 16:03:05 -0500
+Processing by PinsController#index as HTML
+  Parameters: {"category"=>"Sports"}
+  [1m[35mCategory Load (0.2ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."name" = $1 LIMIT 1  [["name", "Sports"]]
+  [1m[36mPin Load (0.2ms)[0m  [1mSELECT "pins".* FROM "pins" WHERE "pins"."category_id" = $1  ORDER BY created_at DESC[0m  [["category_id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1  [["pin_id", 5]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 5], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered pins/index.html.haml within layouts/application (5.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+Completed 200 OK in 131ms (Views: 128.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2015-06-24 16:03:57 -0500
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.3ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1  [["pin_id", 8]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 8], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1[0m  [["pin_id", 7]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 7], ["votable_type", "Pin"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1  [["pin_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 5], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1[0m  [["pin_id", 4]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 4], ["votable_type", "Pin"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1  [["pin_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 3], ["votable_type", "Pin"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1[0m  [["pin_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 2], ["votable_type", "Pin"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1  [["pin_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 1], ["votable_type", "Pin"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (30.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+Completed 200 OK in 133ms (Views: 129.5ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2015-06-24 16:16:51 -0500
+Processing by PinsController#index as HTML
+  [1m[36mPin Load (0.3ms)[0m  [1mSELECT "pins".* FROM "pins"  ORDER BY created_at DESC[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1  [["pin_id", 8]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 8], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1[0m  [["pin_id", 7]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 7], ["votable_type", "Pin"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1  [["pin_id", 5]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 5], ["votable_type", "Pin"]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1[0m  [["pin_id", 4]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 4], ["votable_type", "Pin"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1  [["pin_id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 3], ["votable_type", "Pin"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1[0m  [["pin_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 2], ["votable_type", "Pin"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1  [["pin_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 1], ["votable_type", "Pin"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (40.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+Completed 200 OK in 203ms (Views: 198.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/pins/new" for ::1 at 2015-06-24 16:18:40 -0500
+Processing by PinsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered pins/_form.html.haml (9.7ms)
+  Rendered pins/new.html.haml within layouts/application (12.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 217ms (Views: 213.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-06-24 16:21:01 -0500
+Processing by PinsController#index as HTML
+  [1m[35mPin Load (0.3ms)[0m  SELECT "pins".* FROM "pins"  ORDER BY created_at DESC
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1[0m  [["pin_id", 8]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 8], ["votable_type", "Pin"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1  [["pin_id", 7]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 7], ["votable_type", "Pin"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1[0m  [["pin_id", 5]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 5], ["votable_type", "Pin"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1  [["pin_id", 4]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 4], ["votable_type", "Pin"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1[0m  [["pin_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 3], ["votable_type", "Pin"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1  [["pin_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL[0m  [["votable_id", 2], ["votable_type", "Pin"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."pin_id" = $1[0m  [["pin_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."vote_flag" = 't' AND "votes"."vote_scope" IS NULL  [["votable_id", 1], ["votable_type", "Pin"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered pins/index.html.haml within layouts/application (28.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+Completed 200 OK in 162ms (Views: 157.8ms | ActiveRecord: 3.2ms)
