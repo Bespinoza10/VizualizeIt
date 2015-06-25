@@ -22,7 +22,9 @@
 body {
     background: #fff;
 }
-
+li{
+  font-size: 12px;
+}
 h1, h2, h3, h4, h5, h6 {
     font-weight: 100;
 }
@@ -37,7 +39,7 @@ p.bold{
 
 nav.navbar.navbar-default{
   background: #fff;
-  border-bottom: 2px solid #2F3238;
+  border-bottom: 1px solid #2F3238;
   border-radius: 0px;
 }
 .navbar-default .navbar-nav > li > a.nvli1{
@@ -58,7 +60,7 @@ nav {
         a {
             color: #2F3238;
             font-family: 'Lato', sans-serif;
-            font-size: 30px;
+            font-size: 25px;
             &:hover {
                 text-decoration: none;
             }
